@@ -1,2 +1,5 @@
+
 http://tranquil-dawn-3201.herokuapp.com/
 thats the link to the heroku. I think everything should be set up.
+
+radio buttons and checkboxes. 
