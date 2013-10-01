@@ -1,5 +1,7 @@
-
 http://tranquil-dawn-3201.herokuapp.com/
-thats the link to the heroku. I think everything should be set up.
 
-radio buttons and checkboxes. 
+created a basic form and lined everything together
+
+made a landing page that directs user to form and index.
+
+Going forward I will probably expand on this to just create a blog with posts and comments.
