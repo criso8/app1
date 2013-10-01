@@ -5,3 +5,6 @@ created a basic form and lined everything together
 made a landing page that directs user to form and index.
 
 Going forward I will probably expand on this to just create a blog with posts and comments.
+
+***I juschecked too see if it is working on heroku. My landing page is fine but the form page does not work.
+Not sure what went wrong there. It works in my local host. 
