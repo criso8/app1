@@ -2,7 +2,14 @@ App1::Application.routes.draw do
 
 
 
+
+
+resources :workouts
+
 resources :users
+
+
+
 
 
 get "landing_pages/home"
