@@ -1,7 +1,3 @@
 http://tranquil-dawn-3201.herokuapp.com/
 
-created a basic form and lined everything together
-
-made a landing page that directs user to form and index.
-
-Going forward I will probably expand on this to just create a blog with posts and comments.
+Stuff wasn't working when I submitted on mon. I created a branch because everything was messed up. It should all be good now. You can view edit and deleate in both my tables. 
