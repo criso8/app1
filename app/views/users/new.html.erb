@@ -1,5 +1,18 @@
 <%= form_for(@user) do |f| %>
-	<div class="field">
+	
+<div class="error-msg">
+  <% if @user.errors.any? %>
+    <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+    </div>
+  <% end %>
+</div>
+
+
+  <div class="field">
     	<p>name</p> 
     	<%= f.text_field :name%>
     </div>
@@ -11,6 +24,15 @@
     	<p>password</p> 
      	<%= f.text_field :password%>
     </div>
+
+<p>password</p>
+  <div class="field">
+  <%= f.text_field :password%>
+</div>
+<div class="field">
+  <p>Re-enter Pass</p>
+  <%= f.text_field :password_confirmation%>
+</div>
 
     <div class="actions">
       <%= f.submit %>
