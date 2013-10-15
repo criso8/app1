@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: MyString
+  datez: MyString
+  meters: 1
   user: 
 
 two:
-  title: MyString
+  datez: MyString
+  meters: 1
   user: 

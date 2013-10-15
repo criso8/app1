@@ -11,27 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131007205053) do
-
-  create_table "tasklists", :force => true do |t|
-    t.string   "title"
-    t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "tasklists", ["user_id"], :name => "index_tasklists_on_user_id"
-
-  create_table "tasks", :force => true do |t|
-    t.text     "name"
-    t.string   "Priority"
-    t.boolean  "Completed"
-    t.integer  "TaskList_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
-  add_index "tasks", ["TaskList_id"], :name => "index_tasks_on_TaskList_id"
+ActiveRecord::Schema.define(:version => 20131015011226) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -40,5 +20,15 @@ ActiveRecord::Schema.define(:version => 20131007205053) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "workouts", :force => true do |t|
+    t.string   "datez"
+    t.integer  "meters"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "workouts", ["user_id"], :name => "index_workouts_on_user_id"
 
 end

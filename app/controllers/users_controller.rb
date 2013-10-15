@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-  	@users = User.all
+    @users = User.all
   end
 
   def show
@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 end
 
   def new
-  	@user = User.new
+    @user = User.new
   end
 
   def edit
@@ -30,13 +30,16 @@ def destroy
 redirect_to users_path
 end
 
-
   def create 
-  	@user = User.new(params[:user])
-  	if @user.save
-  		redirect_to users_path
-  	else
-  		render 'new'
+    @user = User.new(params[:user])
+    if @user.save
+      redirect_to users_path
+    else
+      render 'new'
+  end
+  end
+
+
 end
-end
-end
+
+

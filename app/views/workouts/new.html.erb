@@ -1,0 +1,20 @@
+<%= form_for(@work_out) do |f| %>
+	<div class="field">
+		<p>date</p>
+		<%= f.text_field :datez%>
+		</div>
+
+	<div class="field">
+		<p>meters</p>
+		<%= f.text_field :meters%>
+		</div>
+
+	<div class="field">
+		<p>user</p>
+		<%= f.collection_select :user_id, User.all, :id, :name%>
+	</div>
+
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+<% end %>

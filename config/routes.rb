@@ -1,14 +1,6 @@
 App1::Application.routes.draw do
 
-  get "tasks/new"
-
-  get "tasks/index"
-
-  get "task_lists/new"
-
-  get "task_lists/index"
-
-resources :tasklists
+  resources :workouts
 
 resources :users
 
