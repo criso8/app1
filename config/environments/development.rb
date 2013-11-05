@@ -1,4 +1,5 @@
 App1::Application.configure do
+
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -34,4 +35,10 @@ App1::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+
+
+config.action_mailer.delivery_method = :letter_opener
+
+
 end

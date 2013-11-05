@@ -13,6 +13,11 @@ group :development do
  		end
 
 
+ group :development do
+gem 'letter_opener', github: 'ryanb/letter_opener'
+end
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.

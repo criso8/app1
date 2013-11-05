@@ -7,14 +7,7 @@ class WorkoutsController < ApplicationController
   	@work_out = Workout.new
   end
 
-  def create
-  	@work_out = Workout.new(params[:workout])
-  	if @work_out.save
-  			redirect_to workouts_path
-  	else 
-  		render 'new'
-  	end
-  end
+
   
 
   def edit
@@ -38,6 +31,17 @@ end
     @work_out = Workout.find(params[:id])
     @work_out.destroy
     redirect_to workouts_path
+  end
+
+
+  def create
+    @work_out = Workout.new(params[:workout])
+    if @work_out.save
+        Notifications.new_workout(@work_out).deliver
+        redirect_to workouts_path
+    else 
+      render 'new'
+    end
   end
 
 
