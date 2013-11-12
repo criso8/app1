@@ -1,9 +1,15 @@
 <table>
 	<tr>
 		<td >title</td>
+		<td >meters</td>
 		<td >user</td>
 	</tr>
-<% @work_outs.each do |work_out| %>
+
+	<tr>
+	<td>This is Long!!!</td>
+</tr>
+
+<% @work_outs_long.each do |work_out| %>
 	<tr>
 		<td><%= work_out.datez %></td>
 		<td><%= work_out.meters %></td>
@@ -13,4 +19,20 @@
 		<td><%= link_to "destroy user", work_out, confirm: "you sure you want to do this?", method: :delete %> </td>
 	</tr>
 <% end %>
+
+<tr>
+	<td>This is short!!!</td>
+</tr>
+
+<% @work_outs_short.each do |work_out| %>
+	<tr>
+		<td><%= work_out.datez %></td>
+		<td><%= work_out.meters %></td>
+		<td><%= work_out.user.name %></td>
+		<td><%= link_to "show workout", workout_path(work_out.id) %> </td>
+		<td><%= link_to "edit workout", edit_workout_path(work_out.id) %> </td>
+		<td><%= link_to "destroy user", work_out, confirm: "you sure you want to do this?", method: :delete %> </td>
+	</tr>
+<% end %>
+
 </table>

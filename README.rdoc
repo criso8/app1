@@ -1,3 +1,6 @@
 http://sleepy-taiga-1663.herokuapp.com/
 
-added sendgrid when adding a new workout. 
+
+added scope- long and short workouts.
+
+also added devise for login

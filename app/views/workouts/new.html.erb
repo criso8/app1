@@ -14,7 +14,13 @@
 		<%= f.collection_select :user_id, User.all, :id, :name%>
 	</div>
 
+	<div class="field">
+<%= f.hidden_field :user_id, :value =>current_user.id%>
+</div>
+
 	<div class="actions">
 		<%= f.submit %>
 	</div>
+
+
 <% end %>
