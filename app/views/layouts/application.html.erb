@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<style type="text/css"> 
+.center {
+	text-align:center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+	text-align:left
+}</style>
+
 	<title>App1</title>
 	<link rel="stylesheet" type="text/css" ref="../assets/bootstrap.css">
 	<script src="../assets/bootstrap.js"></script>
@@ -9,6 +21,22 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
+
+<script type="text/javascript">
+$(function() {
+	$(window).on("resize",function(){
+		if ($(document).width() > 600){
+			$(".where").addClass("center");
+			 $(".where").removeClass("left");
+		}
+		else {
+			$(".where").addClass("left");
+			 $(".where").removeClass("center");
+		}
+
+	});
+});
+</script>
 
 	<nav class="navbar navbar-default" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -51,7 +79,11 @@
 	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
 
+<div class="where center">
+
+
 	<%= yield %>
+</div>
 
 </body>
 </html>
