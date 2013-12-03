@@ -6,3 +6,4 @@ my js is in application.html.erb.
 My js will use css to allign everything center and when the window is made small it will switch it back to 
 allign left
 
+12.2 - fixed one of my fields in devise 
