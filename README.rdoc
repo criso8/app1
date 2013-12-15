@@ -1,9 +1,14 @@
-http://sleepy-taiga-1663.herokuapp.com/
+http://whispering-tor-6829.herokuapp.com/workouts
+
+My app lets users log along with their friends. It lets you see what others are doing and track your own progress.
+
+My js controls spacing. It aligns all my forms center and will change it if the windows shrinks.
+My css helps the js with the spacing as well as the nav bar. 
+I have validations on my password, email and confirm password
+My scope sorts my workouts in terms of length and groups them in the view
 
 
-my js is in application.html.erb.
-
-My js will use css to allign everything center and when the window is made small it will switch it back to 
-allign left
-
-12.2 - fixed one of my fields in devise 
+I am using devise as a way for users to login. 
+http://rubygems.org/gems/devise
+Sendgrid controls emails. It sends emails to the user when workouts are created. 
+https://addons.heroku.com/sendgrid
